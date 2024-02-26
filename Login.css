@@ -1,0 +1,77 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfe0c3; /*  green background */
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.header {
+    text-align: center;
+    color: #6b8f71; /* Dark green for header text */
+}
+
+.login-form {
+    background-color: #e7f2e1; /* Light green for form */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-form h2 {
+    color: #6b8f71; /* Dark green for "Login" heading */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.login-form button {
+    background-color: #6b8f71; /* Dark green for login button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* hover effect for buttons */
+.login-form button:hover {
+    opacity: 0.8;
+}
+
+/* "Remember Me" checkbox */
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*  "Forgot Password?" link */
+.login-form a {
+    color: #6b8f71;
+    text-decoration: none;
+}
+
+/* Center the avatar image inside the container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/*  Avatar image style */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
