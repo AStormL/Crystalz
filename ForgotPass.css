@@ -1,0 +1,54 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9EAD3;
+    color: #6AA84F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Input and button styles */
+input[type=email], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6AA84F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Link styles */
+a {
+    color: #6AA84F;
+    text-decoration: none;
+}
+
+/* Center the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
