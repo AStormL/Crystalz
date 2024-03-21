@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D9EAD3;
+            color: #6AA84F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        input[type=email], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; 
+        }
+        button {
+            background-color: #6AA84F; 
+            color: white; 
+            border: none;
+        }
+        a {
+            color: #6AA84F; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>FORGOT PASSWORD</h1>
+
+    <p>Trouble Logging in?</p>
+
+    <form action="/reset-password" method="post">
+        Enter your email and we'll send you a link to reset your password.<br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <button type="submit">Reset Password</button><br><br>
+    </form>
+
+    <a href="/login">Return to Login Page</a>
+</div>
+
+</body>
+</html>
