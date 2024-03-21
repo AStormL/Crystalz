@@ -17,28 +17,36 @@
             text-align: center;
             padding: 20px;
         }
-        .gallery-container {
+        .search-bar {
             display: flex;
-            overflow-x: scroll;
-            padding: 20px;
-        }
-        .gallery-item {
-            flex: 0 0 auto;
-            margin-right: 20px;
-            border-radius: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .gallery-item img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
+        .search-icon {
+            font-size: 18px;
+            color: #6AA84F;
+        }
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
     <div class="header">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <span class="search-icon">&#128269;</span>
+        </div>
     </div>
+    
     <div class="gallery-container">
         <div class="gallery-item">
             <img src=" " alt="Crystal 1">
