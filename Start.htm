@@ -6,13 +6,62 @@
     <link rel="stylesheet" href="style.css">
     <title>Crystalz</title>
 </head>
+
+<style>
+body {
+    font-family: fantasy;
+    background-color: #CBD5C0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+/*image*/
+.image-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #5f7161;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 28px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    width: 40%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+</style>
+
 <body>
-    <main>
-       
-        <div class="container">
-            content
-        </div>
-    </main>
-    <script src="app.js"></script>
+<div class="image-container">
+    <img src="CrystalzLogo1.png" alt="Logo" class="logoimg">
+    <img src="CrystalzType.png" alt="Crystalz" class="img">
+</div>
+
+<button id="btn1" onclick="link to login page';">Login</button><br><br>
+<button id="btn2" onclick="link to create accoutn page';">Create Account</button><br><br>
+<button id="btn3" onclick="link to guest user page';">Guest User</button><br><br>
+
 </body>
+
 </html>
