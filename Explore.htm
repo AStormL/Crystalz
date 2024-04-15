@@ -4,81 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5F5;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #6AA84F;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #FFFFFF;
-            border-radius: 20px;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .search-icon {
-            font-size: 18px;
-            color: #6AA84F;
-        }
-        .search-input {
-            flex: 1;
-            border: none;
-            outline: none;
-            padding: 5px;
-            font-size: 16px;
-        }
-        /* Bottom navigation menu */
-        .bottom-nav {
-            background-color: #333;
-            overflow: hidden;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .bottom-nav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .bottom-nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .bottom-nav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
-    </style>
 </head>
+
+    <style>
+/* Body styles */
+body {
+    font-family: "Verdana", Sans-Serif;
+    background-color: #F0F0F0;
+    color: #3A5311;
+}
+
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.corner {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+}
+
+.search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
+
+/* Link styles */
+a {
+    color: #5f7161;
+    text-decoration: none;
+}
+
+/*top nav*/
+
+.topnav {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    padding: 8px;
+    margin: 0 20px;
+}
+
+li a:hover {
+    background-color: #5f7161;
+    color: white;
+}
+
+li a:active {
+    color: white
+    background-color: #5f7161;
+}
+
+/*gallery*/
+.gallery{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    margin: 10px;
+    cursor: pointer;
+    max-width: 300px;
+    width: 18%;
+    height: 18%;
+    border-radius: 8px;
+}
+
+.gallery-container {
+    position: relative;
+    display: inline-bolck;
+    text-align: center;
+    color: white;
+    max-width: 200%;
+}
+
+.ImgOneText {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    font-size: 1vw;
+    font-weight: bold;
+    padding:2px 6px 4px 6px;
+    color: white;
+    background-color: #5f7161;
+    border: 1px solid #5f7161;
+}
+
+.ImgTwoText {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 32%;
+    transform: translate(-50%, -10%);
+    font-size: 1vw;
+    font-weight: bold;
+    padding:2px 6px 4px 6px;
+    color: white;
+    background-color: #5f7161;
+    border: 1px solid #5f7161;
+}
+
+.ImgThreeText {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 53%;
+    transform: translate(-50%, -10%);
+    font-size: 1vw;
+    font-weight: bold;
+    padding:2px 6px 4px 6px;
+    color: white;
+    background-color: #5f7161;
+    border: 1px solid #5f7161;
+}
+
+.ImgFourText {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 74%;
+    transform: translate(-50%, -10%);
+    font-size: 1vw;
+    font-weight: bold;
+    padding:2px 6px 4px 6px;
+    color: white;
+    background-color: #5f7161;
+    border: 1px solid #5f7161;
+}
+
+.ImgFiveText {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 96%;
+    transform: translate(-50%, -10%);
+    font-size: 1vw;
+    font-weight: bold;
+    padding:2px 6px 4px 6px;
+    color: white;
+    background-color: #5f7161;
+    border: 1px solid #5f7161;
+}
+
+.scroll-container {
+    background-color: #F0F0F0;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.scroll-container img {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+</style>
+
 <body>
-    <div class="header">
-        <div class="search-bar">
-            <input type="text" class="search-input" placeholder="Search...">
-            <span class="search-icon">&#128269;</span>
-        </div>
+
+<!--search bar-->
+<form id="search-form">
+    <div class="search">
+        <input type="text" placeholder="Search.." name="search" class="round" />
+        <button type="submit" class="corner" />
     </div>
-    <div class="gallery-container">
-        <!-- Your crystal images go here -->
+</form>
+
+<!--navigation menu top-->
+<nav>
+    <ul class="topnav'>
+        <li><a href="Explore.htm">Explore</a></li>
+        <li><a href="MyCrystals.htm">My Crystals</a></li>
+        <li><a href="CrystalCare">Crystal Care</a></li>
+        <li><a href="CrystalCare">Zodiac*</a></li>
+        <li><a href="CrystalCare">Chakras*</a></li>
+    </ul>
+</nav>
+
+<!--gallery-->
+<div class="gallery">
+    <div class="scroll-container">
+        <div class="gallery-container">
+            <img src="FillerImg.png" alt="Image 1">
+            <div class="ImgOneText">Calming Crystals</div>
+            <img src="FillerImg2.png" alt="Image 2">
+            <div class="ImgTwoText">Love Crystals</div>
+            <img src="FillerImg3.png" alt="Image 3">
+            <div class="ImgThreeText">Crystal Charging</div>
+            <img src="FillerImg4.png" alt="Image 4">
+            <div class="ImgFourText">Crystals For Confidence</div>
+            <img src="FillerImg5.png" alt="Image 5">
+            <div class="ImgFiveText">Crystal Shops Top Picks</div>
+        <div>
     </div>
-    <div class="bottom-nav">
-        <a href="#home">Home</a>
-        <a href="#share">Share</a>
-        <a href="#favorites">Favorites</a>
-        <a href="#profile">Profile</a>
-    </div>
+</div>
+
+
+
+
 </body>
 </html>
