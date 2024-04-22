@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Crystalz</title>
+    <title>Home</title>
 </head>
 
 <style>
@@ -35,7 +35,7 @@ img {
     margin: 0 auto;
 }
 
-button {
+.button {
     background-color: #5f7161;
     color: white;
     border: none;
@@ -58,9 +58,9 @@ button {
     <img src="CrystalzType.png" alt="Crystalz" class="img">
 </div>
 
-<button id="btn1" onclick="window.location.href='Login.htm';">Login</button><br><br>
-<button id="btn2" onclick="window.location.href='CreateAcc.htm';">Create Account</button><br><br>
-<button id="btn3" onclick="window.location.href='Explore.htm';">Guest User</button><br><br>
+<button type="button" class="button" onclick="location.href='{% url 'Login' %}'">Login</button><br><br>
+<button type="button" class="button" onclick="location.href='{% url 'Register' %}'">Register</button><br><br>
+<button type="button" class="button" onclick="location.href='Explore.html'">Guest User</button><br><br>
 
 </body>
 
