@@ -181,6 +181,51 @@ li a:active {
     border-radius: 8px;
 }
 
+/*crystal image grid and pop outs*/
+#Grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute columns evenly */
+}
+
+/* Style for each column */
+.column {
+    flex: 0 0 calc(50% - 80px);
+    margin: 120px; /* Add spacing around columns (top, right, bottom, left) */
+}
+
+/* Style for each image container */
+.image-container {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content (e.g., pop-up) */
+}
+
+/* Style for the image itself */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style for the pop-up */
+.popup {
+    width: 400px;
+    height: 300px;
+    font-size: 16px; /* Increase font size */
+    line-height: 1.5; /* Adjust line height */
+    padding: 10px; /* Add padding */
+    margin: 10px; /* Adjust margins */
+    background-color: #f9f9f9; /* Set a background color */
+    border: 1px solid #ccc; /* Add a border */
+    overflow: scroll; /* Enable scrolling if content overflows */
+}
+
+/* Show the pop-up on hover */
+.image-container:hover .popup {
+    visibility: visible;
+}
+
+
 </style>
 
 <body>
@@ -198,9 +243,9 @@ li a:active {
     <ul class="topnav'>
         <li><a href="Explore.htm">Explore</a></li>
         <li><a href="MyCrystals.htm">My Crystals</a></li>
-        <li><a href="CrystalCare">Crystal Care</a></li>
-        <li><a href="CrystalCare">Zodiac*</a></li>
-        <li><a href="CrystalCare">Chakras*</a></li>
+        <li><a href="CrystalCare.htm">Crystal Care</a></li>
+        <li><a href="Zodiac.htm">Zodiac*</a></li>
+        <li><a href="Chakras.htm">Chakras*</a></li>
     </ul>
 </nav>
 
@@ -222,8 +267,146 @@ li a:active {
     </div>
 </div>
 
+<div class="CrystalTitle">
+<p><h1>Explore Crystals</h1></p>
+</div>
+
+<!--image grid for crystals-->
+<div id="Grid">
+    <div class="row">
+        <div class="column">
+            <div class="image-container">
+                <img src="agatetumbled.png" alt="Agate Tumbled">
+                <div class="popup">
+                    <p><h2>Agate</h2></p>
+                    <p>Agate is the name given to many <br>
+                    different types of banded Chalcedony,<br>
+                    a mineral from the Quartz family. Its <br>
+                    name is derived from the Achetes River<br>
+                    in Sicily, where Agates were first <br>
+                    discovered. Typically banded in layers<br>
+                    or stripes, some variants feature "eye"<br>
+                    marks or specks of color, some have <br>
+                    fossilized inclusions, and some are solid.<br>
+                    Agate, often known as the earth rainbow,<br>
+                    forms concentric bands in practically every<br>
+                    hue the earth can create, including a <br>
+                    colorless variety.<br> <br>
+                    Agate has a lower intensity and vibrates<br>
+                    at a slower frequency than other stones, <br>
+                    but it is widely valued for its stabilizing<br>
+                    and strengthening properties.The stratified <br>
+                    bands of tiny quartz in Agate may appear<br>
+                    fragile, but they are actually extremely <br>
+                    robust. Agate is wonderful for balancing <br>
+                    emotional, physical, and intellectual <br>
+                    energies, as well as harmonizing yin and<br>
+                    yang, the universe's positive and negative <br>
+                    elements. <br> <br>
+                    Agate encourages maturity, poise, and <br>
+                    inner stability.Its cozy, shielding <br>
+                    qualities promote safety and <br>
+                    self-assurance. Using this gem when<br>
+                    pregnant is highly recommended. <br>
+                    Agate jewelry placed between the breasts<br>
+                    promotes milk and helps new moms avoid <br>
+                    the "baby blues" that can occasionally<br>
+                    accompany childbirth. <br><br> Agate
+                    helps people balancing obligations <br>
+                    or many occupations by quelling the <br>
+                    burning desire for items we do not need. <br>
+                    It helps young toddlers learn to walk <br>
+                    and not fall when they get older, <br>
+                    and it helps authors convey ideas in a way <br>
+                    that is marketable. Agate is also <br>
+                    good for faithfulness in marriage. <br>
+                    When traveling, agate is a helpful <br>
+                    protective amulet that is particularly <br>
+                    good against road accidents.</p>
+                </div>
+            </div>
+            <!-- Add more images here -->
+        </div>
+        <div class="column">
+            <div class="image-container">
+                <img src="moonstonetumbled.png" alt="Moonstone Tumbled">
+                <div class="popup">
+                    <p><h2>Moonstone</h2></p>
+                    <p>Additional info about Moonstone.</p>
+                </div>
+            </div>
+            <!-- Add more images here -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="image-container">
+                <img src="treeagateraw1.png" alt="Tree Agate Raw">
+                <div class="popup">
+                    <p><h2>Tree Agate</h2></p>
+                    <p>The fact that money is green is<br>
+                    not a coincidence. In actuality,<br>
+                    green hue has long been connected to<br>
+                    prosperity and fortune. The ancients<br>
+                    understood the critical need of oxygen<br>
+                    for life support when they observed the<br>
+                    abundance of life in full bloom among<br>
+                    the lush foliage of the great forests.<br>
+                    Green, which represents the complex<br>
+                    interplay between sun, water, and<br>
+                    photosynthesis, is a sign of development<br>
+                    and abundance, representing the earth<br>
+                    in its prime.<br><br> Within the realm<br>
+                    of gemstones, the vivid green hue of<br>
+                    the Tree Agate crystal is associated<br>
+                    with prosperity and fortunate<br>
+                    circumstances, rendering it perfect as<br>
+                    a guardian talisman against energy<br>
+                    vampires attempting to sap your vitality.<br>
+                    The defensive qualities of this<br>
+                    potent warrior stone chase away buzz<br>
+                    kills, dream crushers, and any other<br>
+                    negative forces that tell you that<br>
+                    you're not good enough, even your<br>
+                    own inner critic. According to Feng<br>
+                    Shui, it infuses your room with the<br>
+                    energy of nature without the maintenance<br>
+                    of a real plant, making it an ideal<br>
+                    option for people who aren't very<br>
+                    green. Allow the stone to serve as<br>
+                    a lovely reminder of your close<br>
+                    relationship with the great outdoors<br>
+                    and its abundance of natural wonders.<br></p>
+                </div>
+            </div>
+            <!-- Add more images here -->
+        </div>
+        <div class="column">
+            <div class="image-container">
+                <img src="Malachite.png" alt="Malachite">
+                <div class="popup">
+                    <p><h2>Malachite</h2></p>
+                    <p>Additional info about Malachite.</p>
+                </div>
+            </div>
+            <!-- Add more images here -->
+        </div>
+    </div>
+</div>
 
 
+<script>
+    const imageContainers = document.querySelectorAll('.image-container');
+
+    imageContainers.forEach(container => {
+        const image = container.querySelector('img');
+        const popup = container.querySelector('.popup');
+
+        image.addEventListener('click', () => {
+            popup.classList.toggle('show');
+        });
+    });
+</script>
 
 </body>
 </html>
