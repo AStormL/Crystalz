@@ -241,11 +241,11 @@ li a:active {
 <!--navigation menu top-->
 <nav>
     <ul class="topnav'>
-        <li><a href="https://astorml.github.io/Crystalz/Explore.html">Explore</a></li>
+        <li><a href="Explore.htm">Explore</a></li>
         <li><a href="MyCrystals.htm">My Crystals</a></li>
-        <li><a href="CrystalCare.htm">Crystal Care</a></li>
-        <li><a href="Zodiac.htm">Zodiac*</a></li>
-        <li><a href="Chakras.htm">Chakras*</a></li>
+        <li><a href="CrystalCare">Crystal Care</a></li>
+        <li><a href="CrystalCare">Zodiac*</a></li>
+        <li><a href="CrystalCare">Chakras*</a></li>
     </ul>
 </nav>
 
@@ -278,6 +278,7 @@ li a:active {
             <div class="image-container">
                 <img src="agatetumbled.png" alt="Agate Tumbled">
                 <div class="popup">
+                 <button id="addToCollectionBtn">Add to Collection</button>
                     <p><h2>Agate</h2></p>
                     <p>Agate is the name given to many <br>
                     different types of banded Chalcedony,<br>
@@ -331,6 +332,7 @@ li a:active {
             <div class="image-container">
                 <img src="moonstonetumbled.png" alt="Moonstone Tumbled">
                 <div class="popup">
+                 <button id="addToCollectionBtn">Add to Collection</button>
                     <p><h2>Moonstone</h2></p>
                     <p>Additional info about Moonstone.</p>
                 </div>
@@ -343,6 +345,7 @@ li a:active {
             <div class="image-container">
                 <img src="treeagateraw1.png" alt="Tree Agate Raw">
                 <div class="popup">
+                 <button id="addToCollectionBtn">Add to Collection</button>
                     <p><h2>Tree Agate</h2></p>
                     <p>The fact that money is green is<br>
                     not a coincidence. In actuality,<br>
@@ -385,6 +388,7 @@ li a:active {
             <div class="image-container">
                 <img src="Malachite.png" alt="Malachite">
                 <div class="popup">
+                 <button id="addToCollectionBtn">Add to Collection</button>
                     <p><h2>Malachite</h2></p>
                     <p>Additional info about Malachite.</p>
                 </div>
@@ -396,6 +400,7 @@ li a:active {
 
 
 <script>
+//crystal info pop ups
     const imageContainers = document.querySelectorAll('.image-container');
 
     imageContainers.forEach(container => {
@@ -406,6 +411,22 @@ li a:active {
             popup.classList.toggle('show');
         });
     });
+
+//add to collection button
+    // Get a reference to the button
+    const addToCollectionBtn = document.getElementById('addToCollectionBtn');
+
+    // Add an event listener for the button click
+    addToCollectionBtn.addEventListener('click', () => {
+    // Show a confirmation alert
+    const confirmationMessage = "Crystal added to your collection!";
+    alert(confirmationMessage);
+});
+
+addToCollectionBtn.addEventListener('click', () => {
+    window.location.href = 'collection';
+});
+
 </script>
 
 </body>
