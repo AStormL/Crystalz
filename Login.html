@@ -121,20 +121,13 @@ footer {
                 <label><input type="checkbox"> Remember Me</label>
                 <button type="submit">Login</button>
             </form>
-            <p>Don't have an account? <a href="{% url 'Register' %}">Create an account</a></p>
+            <p>Don't have an account? <a href="https://astorml.github.io/Crystalz/Register.html">Create an account</a></p>
             <p><a href="{% url 'Password_Reset' %}">Forgot Password?</a><p>
         </div>
 
-    {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
 
 <footer>
-    <a href="{Home.html}">Return to Main Menu</a>
+    <a href="https://astorml.github.io/Crystalz/Home.html">Return to Main Menu</a>
 </footer>
 
 <script>
